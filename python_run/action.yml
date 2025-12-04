@@ -1,0 +1,7 @@
+name: "Python action"
+descriptio: "Run main.py script"
+author: "sdariza"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"

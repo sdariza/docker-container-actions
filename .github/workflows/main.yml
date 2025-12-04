@@ -1,0 +1,9 @@
+name: "Git Action for Python script"
+on: [push, pull_request]
+jobs:
+    build:
+        name: Run the python Script
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - uses: ./python_run
