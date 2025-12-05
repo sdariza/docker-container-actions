@@ -2,6 +2,12 @@ name: "Python action"
 descriptio: "Run main.py script"
 author: "sdariza"
 
+inputs:
+  arg1:
+    description: "Username"
+    required: true
+    default: "Sebas"
+
 runs:
   using: "docker"
   image: "Dockerfile"
