@@ -5,3 +5,5 @@ author: "sdariza"
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{  inputs.arg1  }}
