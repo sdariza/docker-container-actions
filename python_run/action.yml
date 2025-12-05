@@ -1,5 +1,5 @@
 name: "Python action"
-descriptio: "Run main.py script"
+description: "Run main.py script"
 author: "sdariza"
 
 inputs:
@@ -11,5 +11,3 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{  inputs.arg1  }}
