@@ -5,5 +5,9 @@ jobs:
         name: Run the python Script
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
-            - uses: ./python_run
+            - name: "Running Python script"
+              uses: actions/checkout@v1
+            - name: "Run python_run"
+              uses: ./python_run
+              with:
+                arg1: "sdariza"
